@@ -1,0 +1,154 @@
+.intro-wrap {
+  width: 100%;
+  background: url(../img/bg/bg.jpg) no-repeat center top;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  height: 100%;
+}
+
+.intro-wrap__pattern {
+  background: url(../img/bg/bg_pattern.png) repeat 0 0;
+  height: 100%;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+  }
+}
+
+.intro {
+  width: 90%;
+  max-width: 700px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.intro__welcome-text {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+
+  @media(max-width: $mobile){
+    font-size: 15px;
+  }
+}
+
+.intro__heading {
+  font-size: 80px;
+  letter-spacing: 5px;
+
+  @media(max-width: $tablet){
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+
+  @media(max-width: $mobile){
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+}
+
+.intro__tagline {
+  font-size: 24px;
+  font-weight: 600;
+  color: $color--attention;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  &:before, &:after {
+    content: "";
+    width: 86px;
+    height: 3px;
+    display: inline-block;
+    background-color: $color--attention;
+    vertical-align: middle;
+  }
+
+  &:before {
+    margin-right: 5px;
+  }
+
+  &:after {
+    margin-left: 5px;
+  }
+
+  span:before {
+    content: "\2022";
+    margin: 0 15px;
+    font-size: 18px;
+    display: inline-block;
+  }
+
+  span:first-child:before {
+    content: "";
+    margin: 0;
+  }
+
+
+  @media(max-width: $tablet) {
+    font-size: 20px;
+
+    &:before, &:after {
+      width: 20px;
+    }
+
+    &:before {
+      margin-right: 2px;
+    }
+
+    &:after {
+      margin-left: 2px;
+    }
+
+    span:before {
+      margin: 0 5px;
+    }
+  }
+
+  @media(max-width: $mobile){
+    font-size: 16px;
+    margin-bottom: 10px;
+
+    &:before, &:after {
+      display: none;
+    }
+
+    span:before {
+      margin: 0 7px;
+    }
+  }
+}
+
+.intro__text {
+  font-size: 15px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @media(max-width: $mobile){
+    font-size: 13px;
+  }
+}
+
+.intro__link {
+  display: inline-block;
+  text-transform: uppercase;
+  border: 2px solid $color--attention;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 15px;
+
+  &:hover {
+    border:  2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+  }
+}

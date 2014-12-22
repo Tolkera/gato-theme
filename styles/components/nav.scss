@@ -1,0 +1,91 @@
+.nav__button {
+  display: none;
+  width: 30px;
+  height: 30px;
+  border: 0;
+  padding: 0;
+  outline: none;
+  background: url('../img/icons/menu.png') no-repeat 0 0;
+}
+
+
+.nav__button {
+  @media(max-width: $tablet){
+    display: block;
+    float: right;
+  }
+}
+
+.main-nav {
+  float: right;
+  display: block;
+
+
+  @media (max-width: $tablet) {
+    clear: both;
+    margin-top: 20px;
+    float: none;
+    display: none;
+    margin-left: -5px;
+  }
+
+  @media(max-width: $mobile) {
+    background-color: #bcbbbb;
+    margin-top: -5px;
+  }
+}
+
+.main-nav__item {
+  display: inline-block;
+  margin-left: 15px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  @media(max-width: $tablet){
+    margin-left: 0;
+    margin-right: 5px;
+
+    &:first-child a {
+      border: 0;
+    }
+  }
+
+  @media(max-width: $mobile){
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.main-nav__link {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 5px 15px;
+  color: $color--heading;
+
+  &:hover {
+    color: $color--attention;
+    text-decoration: none;
+  }
+
+  @media(max-width: $tablet){
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  @media(max-width: $mobile){
+    display: block;
+  }
+}
+
+.main-nav__link--current {
+  color: $color--attention;
+  border-bottom: 3px solid $color--attention;
+
+  @media (max-width: $mobile) {
+    border: 0;
+  }
+}
+

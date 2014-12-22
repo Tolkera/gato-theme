@@ -1,0 +1,61 @@
+.grid {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.grid-col {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -4px;
+  overflow: hidden;
+  padding: 0 30px;
+
+  @media(max-width: $mobile){
+    padding: 0;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.grid-col--quarter {
+  width: 25%;
+
+  @media(max-width: $tablet){
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  @media(max-width: $mobile){
+    width: 100%;
+  }
+}
+
+.grid-col--half {
+  width: 50%;
+
+  @media(max-width: $tablet){
+    width: 100%;
+  }
+}
+
+.grid-col--sixth {
+  width: 16%;
+  padding: 10px;
+
+  @media(max-width: $tablet){
+    width: 33.33%;
+  }
+
+  @media(max-width: $mobile){
+    width: 50%;
+  }
+}

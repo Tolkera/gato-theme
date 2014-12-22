@@ -1,0 +1,88 @@
+.heading--primary {
+  font-size: 37px;
+  font-family: $font--heading;
+
+  @media(max-width: $tablet) {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  @media(max-width: $mobile){
+    font-size: 25px;
+  }
+}
+
+.heading--secondary {
+  font-size: 24px;
+  font-weight: 700;
+
+  @media(max-width: $tablet) {
+    font-size: 20px;
+  }
+
+  @media(max-width: $mobile){
+    font-size: 18px;
+  }
+}
+
+.heading--tertiary {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: $font--heading;
+  color: $color--heading;
+}
+
+.heading--fourth {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.heading--fifth {
+  font-size: 16px;
+  font-family: $font--heading;
+  font-weight: 500;
+  color: $color--heading;
+}
+
+.subheading {
+  color: #bcbbbb;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @media(max-width: $mobile){
+    font-size: 14px;
+  }
+}
+
+.subheading--divider {
+  &:after {
+    content: "";
+    display: block;
+    width: 95px;
+    height: 3px;
+    background-color: $color--attention;
+    margin: 20px auto;
+  }
+
+  @media(max-width: $mobile){
+    &:after {
+      margin: 10px auto;
+    }
+  }
+}
+
+.heading--large {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-family: $font--heading;
+
+
+  @media(max-width: $tablet) {
+    font-size: 30px;
+  }
+
+  @media(max-width: $mobile){
+    font-size: 30px;
+  }
+}

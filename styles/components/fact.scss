@@ -1,0 +1,22 @@
+.fact-item__text {
+  font-size: 18px;
+  font-family: $font--heading;
+  color: #eee;
+  text-transform: uppercase;
+}
+
+.fact-item {
+
+  @media(max-width: $mobile){
+
+    .media__image {
+      vertical-align: middle;
+    }
+
+    .media__content {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+  }
+}

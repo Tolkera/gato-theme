@@ -1,0 +1,30 @@
+.skill-item {
+  padding-bottom: 30px;
+
+  @media(max-width: $tablet) {
+    padding-bottom: 15px;
+  }
+}
+
+.skill-item__line {
+  height: 29px;
+  background: #f3f3f3;
+  margin-top: 5px;
+
+  @media(max-width: $tablet) {
+    height: 20px;
+  }
+}
+
+.skill-item__fill {
+  background: $color--attention;
+  height: 100%;
+  position: relative;
+}
+
+.skill-item__percentage {
+  float: right;
+  color: $color--heading;
+  font-size: 16px;
+  font-weight: 600;
+}

@@ -1,0 +1,83 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: $font--regular;
+  font-size: 14px;
+  color: #777;
+  background: #fff;
+  line-height: 1.5;
+  height: 100%;
+  min-height: 400px;
+
+  @media(max-width: $tablet){
+      font-size: 13px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding-left: 5px;
+  border: 1px solid #ededed;
+  background: #fff;
+  height: 40px;
+  margin-top: 30px;
+  color: #777;
+  outline: none;
+}
+
+textarea {
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: $color--attention;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &[href^="mailto"] {
+    color: #777;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  color: $color--heading;
+  text-transform: uppercase;
+  line-height: 1.5;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+cite {
+  font-style: normal;
+}
+
+blockquote {
+  margin: 0;
+}
+
+a {
+  color: $color--attention;
+}
